@@ -11,8 +11,10 @@ Since retraining those large language models from scratch costs millions of doll
 
        
 <h3> Why RAG   </h3>    
-Retrieval-augmented generation (RAG) integrates external information retrieval into the process of generating responses by Large Language Models (LLMs). It searches a database for information beyond its pre-trained knowledge base, significantly improving the accuracy and relevance of the generated responses..         
-![image](https://github.com/padmapria/LM-RAG-Chatbot-over-custom-data/assets/31624929/24cc21d1-083f-4e3f-93a1-a4055a759d05)
+Retrieval-augmented generation (RAG) integrates external information retrieval into the process of generating responses by Large Language Models (LLMs). It searches a database for information beyond its pre-trained knowledge base, significantly improving the accuracy and relevance of the generated responses..     
+
+![image](https://github.com/padmapria/LM-RAG-Chatbot-over-custom-data/assets/31624929/9fb2e6bd-6998-47fd-aebd-cdd8663eb673)
+
 
       
 The image above shows how a basic RAG system works. Before forwarding the question to the LLM, we have a layer that searches our knowledge base for the “relevant knowledge” to answer the user query. Specifically, in this case, the spending data from the last month. Our LLM can now generate a relevant non-hallucinated response about our budget.   
@@ -31,6 +33,12 @@ We can find RAG models being applied in many areas today, especially those who n
 <b>Data-to-text generation:</b> By retrieving relevant structured data, RAG models can generate product/business intelligence reports from databases or describing insights from data visualizations and charts    
 
 <b>Multimedia understanding:</b> RAG isn’t limited to text - it can retrieve multimodal information like images, video, and audio to enhance understanding. Answering questions about images/videos by retrieving relevant textual context.  
+
+Refer the site for more details   
+https://qdrant.tech/articles/what-is-rag-in-ai/
+
+
+<h2> How to run our LLM RAG application</h2>
 
 
 
