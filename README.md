@@ -40,6 +40,37 @@ https://qdrant.tech/articles/what-is-rag-in-ai/
 
 <h2> How to run our LLM RAG application</h2>
 
+<b>OpenAI</b><br/>
+- OpenAI provides the API for accessing powerful language models like GPT-3.5 Turbo.<br/>
+- In this application, the OpenAI API is used to generate responses based on the data retrieved from Elasticsearch, for the query passed from the chatbot.<br/>
+
+<h2> How to run This Application</h2> 
+**Note:** OpenAI immediately revokes the API key once it detects that the key has been exposed publicly. Therefore, do not expose your API key.<br/>
+<br/>
+Generate your OpenAI API key here: [Click Here](https://platform.openai.com/account/api-keys)
+
+1. Clone this git repository from command prompt<br/>
+git clone https://github.com/padmapria/LLM-RAG-Chatbot-over-custom-data.git    
+cd LLM-RAG-Chatbot-over-custom-data    
+
+2. Create a `.env` file inside the 'app' folder and store the key as follows:     
+OPENAI_API_KEY=YOUR_API_KEY_HERE<br/>
+ELASTIC_SEARCH_PWD=DkIedPPSCb<br/>
+
+. Refer to the key in `rag.py` by:  
+```python   
+from dotenv import load_dotenv   
+load_dotenv()   
+openai_api_key = os.getenv("OPENAI_API_KEY")    
+ELAST_SEARCH_PWD = os.getenv('ELASTIC_SEARCH_PWD')   
+```
+3. Install Docker Desktop on your computer and start Docker Desktop    
+
+4. Start the application by running the command from the command prompt <br/>
+docker compose up -d
+
+5. Check the deployed application from the brower..        
+http://localhost:8501 
 
 
  
